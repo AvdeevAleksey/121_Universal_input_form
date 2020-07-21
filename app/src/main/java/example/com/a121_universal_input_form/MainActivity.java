@@ -40,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
         buttonClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText userName = findViewById(R.id.userName);
+                EditText userEmail = findViewById(R.id.userEmailAddress);
                 TextView txtOutputResults = findViewById(R.id.txtOutputResults);
                 txtOutputResults.setText("");
+                userName.setText("");
+                userEmail.setText("");
             }
         });
 
